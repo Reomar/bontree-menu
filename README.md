@@ -8,7 +8,14 @@ Run `python3 -m http.server 8000` from this directory and open `http://localhost
 
 ## Update the menu
 
-Replace `menu.pdf` with the new PDF, preview it, and commit the change. Keep the filename `menu.pdf`. The site renders every page automatically. `og.jpg` is a copy of the PDF's first page used as the initial cover and social preview; update it if the cover changes. With Poppler installed, regenerate it with `pdftoppm -f 1 -l 1 -singlefile -scale-to 1200 -jpeg -jpegopt quality=90 menu.pdf og`. If the new cover has different proportions, update its dimensions in `index.html`.
+Replace `menu.pdf` with the new PDF, preview it, and commit the change. Keep the filename `menu.pdf`. The site renders every page automatically. `cover.jpg` is the first page shown while the PDF loads, and `og.jpg` is a landscape crop of that page for social sharing. If the cover changes, regenerate both images and inspect the crop:
+
+```sh
+pdftoppm -f 1 -l 1 -singlefile -scale-to 1200 -jpeg -jpegopt quality=90 menu.pdf cover
+swift scripts/create-og.swift menu.pdf og.jpg
+```
+
+The crop is centered on the tree logo in the current PDF. Adjust the focal point in the script if a future cover has a different layout. If the new cover has different proportions, update the `cover.jpg` dimensions in `index.html`.
 
 ## GitHub Pages and domain
 
