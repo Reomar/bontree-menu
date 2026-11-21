@@ -93,7 +93,12 @@ function setNear(state, near) {
 try {
   const pdfjs = await import('./vendor/pdf.min.mjs');
   pdfjs.GlobalWorkerOptions.workerSrc = new URL('./vendor/pdf.worker.min.mjs', import.meta.url).href;
-  pdf = await pdfjs.getDocument({ url: 'menu.pdf' }).promise;
+  pdf = await pdfjs.getDocument({
+    url: 'menu.pdf?v=8ec293615cca',
+    disableStream: true,
+    disableAutoFetch: true,
+    rangeChunkSize: 65536,
+  }).promise;
   const firstPage = await pdf.getPage(1);
   const firstViewport = firstPage.getViewport({ scale: 1 });
   const states = [];

@@ -1,6 +1,6 @@
 # Bon Tree menu
 
-A menu-only GitHub Pages site for `bontree.coffee`. It displays `menu.pdf` directly, with no surrounding interface. PDF.js renders pages as visitors scroll, and the browser's normal pinch or page zoom remains available.
+A menu-only GitHub Pages site for `bontree.coffee`. It displays `menu.pdf` directly, with no surrounding interface. PDF.js loads PDF data and renders pages as visitors scroll, and the browser's normal pinch or page zoom remains available. The current PDF is compressed and optimized for web viewing.
 
 ## Preview
 
@@ -8,7 +8,7 @@ Run `python3 -m http.server 8000` from this directory and open `http://localhost
 
 ## Update the menu
 
-Replace `menu.pdf` with the new PDF, preview it, and commit the change. Keep the filename `menu.pdf`. The site renders every page automatically. `cover.jpg` is the first page shown while the PDF loads, and `og.jpg` is a landscape crop of that page for social sharing. If the cover changes, regenerate both images and inspect the crop:
+Replace `menu.pdf` with the new PDF, preview it, and commit the change. Keep the filename `menu.pdf`. To avoid serving a cached older file, replace the PDF version in `viewer.mjs` and all PDF links in `index.html` with the first 12 characters from `shasum -a 256 menu.pdf`. The site renders every page automatically. `cover.jpg` is the first page shown while the PDF loads, and `og.jpg` is a landscape crop of that page for social sharing. If the cover changes, regenerate both images and inspect the crop:
 
 ```sh
 pdftoppm -f 1 -l 1 -singlefile -scale-to 1200 -jpeg -jpegopt quality=90 menu.pdf cover
