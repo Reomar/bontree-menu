@@ -26,20 +26,49 @@
   <style>
     html, body { margin: 0; min-height: 100%; background: #214c46; }
     main { width: min(100%, 1000px); margin: 0 auto; }
-    .page { position: relative; width: 100%; overflow: hidden; background: #f6e8db; }
-    canvas, .cover { display: block; width: 100%; height: auto; direction: ltr; }
-    .page canvas, .page .cover { position: absolute; inset: 0; }
+    .page { display: block; width: 100%; height: auto; background: #f6e8db; direction: ltr; }
     .fallback { padding: 1rem; font: 16px sans-serif; color: white; }
     .fallback a { color: white; }
     .screen-reader-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
     .screen-reader-only:focus { position: static; width: auto; height: auto; margin: 0; clip: auto; color: white; }
   </style>
-  <script type="module" src="viewer.mjs?v=8ec293615cca"></script>
+  <script>
+    window.addEventListener('error', (event) => {
+      if (event.target instanceof HTMLImageElement && event.target.closest('#menu')) {
+        document.getElementById('fallback').hidden = false;
+      }
+    }, true);
+  </script>
 </head>
 <body>
-  <main id="menu" aria-label="مينو Bon Tree"><img class="cover" id="cover" src="cover.jpg" width="846" height="1200" alt="" aria-hidden="true"></main>
-  <a class="screen-reader-only" href="menu.pdf?v=8ec293615cca">افتح القائمة بصيغة PDF</a>
   <p class="fallback" id="fallback" hidden>تعذر عرض القائمة. <a href="menu.pdf?v=8ec293615cca">افتح ملف PDF</a>.</p>
-  <noscript><p class="fallback"><a href="menu.pdf?v=8ec293615cca">افتح القائمة بصيغة PDF</a></p></noscript>
+  <main id="menu" aria-label="مينو Bon Tree">
+    <!-- BEGIN GENERATED MENU PAGES -->
+    <img class="page" data-page="1" src="pages/8ec293615cca/page-01-1000.webp" srcset="pages/8ec293615cca/page-01-1000.webp 1000w, pages/8ec293615cca/page-01-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 1 من 23" loading="eager" decoding="async" fetchpriority="high">
+    <img class="page" data-page="2" src="pages/8ec293615cca/page-02-1000.webp" srcset="pages/8ec293615cca/page-02-1000.webp 1000w, pages/8ec293615cca/page-02-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 2 من 23" loading="eager" decoding="async">
+    <img class="page" data-page="3" src="pages/8ec293615cca/page-03-1000.webp" srcset="pages/8ec293615cca/page-03-1000.webp 1000w, pages/8ec293615cca/page-03-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 3 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="4" src="pages/8ec293615cca/page-04-1000.webp" srcset="pages/8ec293615cca/page-04-1000.webp 1000w, pages/8ec293615cca/page-04-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 4 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="5" src="pages/8ec293615cca/page-05-1000.webp" srcset="pages/8ec293615cca/page-05-1000.webp 1000w, pages/8ec293615cca/page-05-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 5 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="6" src="pages/8ec293615cca/page-06-1000.webp" srcset="pages/8ec293615cca/page-06-1000.webp 1000w, pages/8ec293615cca/page-06-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 6 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="7" src="pages/8ec293615cca/page-07-1000.webp" srcset="pages/8ec293615cca/page-07-1000.webp 1000w, pages/8ec293615cca/page-07-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 7 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="8" src="pages/8ec293615cca/page-08-1000.webp" srcset="pages/8ec293615cca/page-08-1000.webp 1000w, pages/8ec293615cca/page-08-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 8 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="9" src="pages/8ec293615cca/page-09-1000.webp" srcset="pages/8ec293615cca/page-09-1000.webp 1000w, pages/8ec293615cca/page-09-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 9 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="10" src="pages/8ec293615cca/page-10-1000.webp" srcset="pages/8ec293615cca/page-10-1000.webp 1000w, pages/8ec293615cca/page-10-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 10 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="11" src="pages/8ec293615cca/page-11-1000.webp" srcset="pages/8ec293615cca/page-11-1000.webp 1000w, pages/8ec293615cca/page-11-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 11 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="12" src="pages/8ec293615cca/page-12-1000.webp" srcset="pages/8ec293615cca/page-12-1000.webp 1000w, pages/8ec293615cca/page-12-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 12 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="13" src="pages/8ec293615cca/page-13-1000.webp" srcset="pages/8ec293615cca/page-13-1000.webp 1000w, pages/8ec293615cca/page-13-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 13 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="14" src="pages/8ec293615cca/page-14-1000.webp" srcset="pages/8ec293615cca/page-14-1000.webp 1000w, pages/8ec293615cca/page-14-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 14 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="15" src="pages/8ec293615cca/page-15-1000.webp" srcset="pages/8ec293615cca/page-15-1000.webp 1000w, pages/8ec293615cca/page-15-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 15 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="16" src="pages/8ec293615cca/page-16-1000.webp" srcset="pages/8ec293615cca/page-16-1000.webp 1000w, pages/8ec293615cca/page-16-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 16 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="17" src="pages/8ec293615cca/page-17-1000.webp" srcset="pages/8ec293615cca/page-17-1000.webp 1000w, pages/8ec293615cca/page-17-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 17 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="18" src="pages/8ec293615cca/page-18-1000.webp" srcset="pages/8ec293615cca/page-18-1000.webp 1000w, pages/8ec293615cca/page-18-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 18 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="19" src="pages/8ec293615cca/page-19-1000.webp" srcset="pages/8ec293615cca/page-19-1000.webp 1000w, pages/8ec293615cca/page-19-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 19 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="20" src="pages/8ec293615cca/page-20-1000.webp" srcset="pages/8ec293615cca/page-20-1000.webp 1000w, pages/8ec293615cca/page-20-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 20 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="21" src="pages/8ec293615cca/page-21-1000.webp" srcset="pages/8ec293615cca/page-21-1000.webp 1000w, pages/8ec293615cca/page-21-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 21 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="22" src="pages/8ec293615cca/page-22-1000.webp" srcset="pages/8ec293615cca/page-22-1000.webp 1000w, pages/8ec293615cca/page-22-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 22 من 23" loading="lazy" decoding="async">
+    <img class="page" data-page="23" src="pages/8ec293615cca/page-23-1000.webp" srcset="pages/8ec293615cca/page-23-1000.webp 1000w, pages/8ec293615cca/page-23-2000.webp 2000w" sizes="(max-width: 1000px) 100vw, 1000px" width="2000" height="2838" alt="القائمة، الصفحة 23 من 23" loading="lazy" decoding="async">
+    <!-- END GENERATED MENU PAGES -->
+  </main>
+  <a class="screen-reader-only" href="menu.pdf?v=8ec293615cca">افتح القائمة بصيغة PDF</a>
 </body>
 </html>
